@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <form action="" id="user" method="post">
+      <label for="name">Name:</label>
+      <input type="text" placeholder="Enter name" id="name" required />
+      <br />
+      <label for="image">Profile:</label>
+      <input type="file" id="myProfile" />
+      <br />
+      <label type="Number" for="phone">Phone:</label>
+      <input placeholder="Phone" id="phone" />
+      <br />
+      <label type="email" for="email">Email:</label>
+      <input placeholder="email" id="email" />
+      <br />
+
+      <div class="container">
+        <label for="">Gender:</label>
+
+        <input
+          type="radio"
+          class="designation"
+          id="male"
+          value="male"
+          name="male"
+        />
+        <label for="employee">Male</label>
+        <input
+          type="radio"
+          class="designation"
+          id="female"
+          value="female"
+          name="female"
+        />
+        <label for="employee">Female</label>
+        <br />
+        <label for="Password">Password:</label>
+        <input type="password" placeholder="Password" id="password" />
+        <br />
+        <label for="password">Confirm Password:</label>
+        <input
+          type="password"
+          placeholder="Confirm Password"
+          id="conpassword"
+        />
+      </div>
+    </form>
+    <button onclick="Register()">Register</button>
+  </body>
+</html>
+<script src="index.js"></script>
