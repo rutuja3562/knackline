@@ -64,15 +64,16 @@ function editTask(id) {
       password: document.getElementById("password").value,
       conformed: document.getElementById("conpassword").value,
     };
-    var arr =[...userStack.map((e, i) => {
+    var arr=[];
+     arr = userStack.map((e, i) => {
         if (e.id == id) {
-          return register_data;
+          return arr[i]= register_data;
+        }else{
+         return arr[i]=e
         }
       })
-      
-    ];
-   console.log(arr)
-    localStorage.setItem("registerdata", JSON.stringify(userStack));
+   console.log("arr",arr)
+    localStorage.setItem("registerdata", JSON.stringify(arr));
     display();
   });
   display()
